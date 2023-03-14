@@ -63,7 +63,7 @@ while(i<len):
         q[j][2]=((j+1)*10)+(j-1)
         j+=1
 
-    elif reg[i]=='b' and reg[i+1]=='*':
+    elif reg[i]=='b' and reg[i+1]=='*': 
         q[j][2]=((j+1)*10)+(j+3)
         j+=1
         q[j][1]=j+1
