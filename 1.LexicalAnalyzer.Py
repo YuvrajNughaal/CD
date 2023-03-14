@@ -23,4 +23,4 @@ for line in lines:
         elif is_int(i):
             print (i, " is a number")
         else:
-            print (i, " is an identifier")
+            print (i, " is an identifier") 
