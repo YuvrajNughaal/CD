@@ -1,0 +1,10 @@
+import networkx as nx
+from matplotlib import pyplot as plt
+graph = nx.DiGraph()
+graph.add_edges_from([("root", "a"), ("a", "b"), ("a", "e"), ("b", "c"), ("b", "d"), ("d", "e")])
+if nx.is_directed(graph) :
+  print('It is a DAG')
+plt.tight_layout()
+nx.draw_networkx(graph, arrows=True)
+plt.savefig("g1.png", format="PNG")
+plt.clf()
